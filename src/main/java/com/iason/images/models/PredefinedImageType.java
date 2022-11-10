@@ -3,7 +3,9 @@ package com.iason.images.models;
 import lombok.Data;
 
 @Data
-public class PredefinedImageTypes {
+public class PredefinedImageType {
+
+    private String name;
 
     private int height;
 

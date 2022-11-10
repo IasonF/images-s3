@@ -12,16 +12,16 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @SpringBootApplication
 public class ImageSearchApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(ImageSearchApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ImageSearchApplication.class, args);
+    }
 
-	@Bean
-	public Docket api() {
-		return new Docket(DocumentationType.SWAGGER_2)
-				.select()
-				.apis(RequestHandlerSelectors.any())
-				.paths(PathSelectors.any())
-				.build();
-	}
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
+    }
 }
